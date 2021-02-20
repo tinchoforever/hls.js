@@ -573,7 +573,6 @@ describe(`testing hls.js playback in the browser on "${browserDescription}"`, fu
       const url = stream.url;
       const config = stream.config || {};
       if (
-        !HlsjsLightBuild ||
         !stream.blacklist_ua ||
         stream.blacklist_ua.indexOf(browserConfig.name) === -1
       ) {
